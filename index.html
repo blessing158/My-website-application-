@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover Software Development</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="hero">
+    <h1>Become a Software Developer</h1>
+    <p>Explore what developers do and why it’s awesome!</p>
+    <button onclick="showSection('perks')">See Perks</button>
+  </header>
+
+  <!-- Shopify-style grid -->
+  <main class="grid">
+    <div class="card" onclick="showSection('intro')">
+      <h2>👩‍💻 What is a Developer?</h2>
+      <p>Learn the basics of software development.</p>
+    </div>
+    <div class="card" onclick="showSection('perks')">
+      <h2>🚀 Perks</h2>
+      <p>Discover the benefits of this career.</p>
+    </div>
+    <div class="card" onclick="showSection('skills')">
+      <h2>📚 Skills Needed</h2>
+      <p>Find out what you need to succeed.</p>
+    </div>
+  </main>
+
+  <!-- Hidden sections -->
+  <section id="intro" class="content" style="display:none;">
+    <h2>What is a Developer?</h2>
+    <p>Software developers build apps, websites, and systems that power our world.</p>
+  </section>
+
+  <section id="perks" class="content" style="display:none;">
+    <h2>Perks of Being a Developer</h2>
+    <ul>
+      <li>High demand and job security</li>
+      <li>Great salary potential</li>
+      <li>Work from anywhere</li>
+      <li>Creative and impactful work</li>
+    </ul>
+  </section>
+
+  <section id="skills" class="content" style="display:none;">
+    <h2>Skills Needed</h2>
+    <p>Programming, teamwork, problem solving, and continuous learning.</p>
+  </section>
+
+  <!-- Script -->
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('.content').forEach(sec => sec.style.display = 'none');
+      document.getElementById(id).style.display = 'block';
+    }
+  </script>
+</body>
+</html>
+
+
+
+
+vvv
